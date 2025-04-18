@@ -9,7 +9,7 @@ function DetailInfo({ onChangeInput }: DetailInfoProps) {
   return (
     <div className="details-container">
       <Input
-        inputID="initalInvestment"
+        inputID="initialInvestment"
         inputLabel="Initial Investment"
         onChangeInput={onChangeInput}
       />

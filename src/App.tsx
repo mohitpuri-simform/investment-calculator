@@ -4,6 +4,13 @@ import Header from "./components/header/Header";
 import DetailInfo from "./components/investmentDetail/DetailInfo";
 import ReturnsPreview from "./components/returnsPreview/ReturnsPreview";
 
+enum ChooseInput {
+  initialInvestment = "initialInvestment",
+  annualInvestment = "annualInvestment",
+  expectedReturn = "expectedReturn",
+  duration = "duration",
+}
+
 function App() {
   const [initalInvestment, setInitialInvestment] = useState(0);
   const [annualInvestment, setAnnualInvestment] = useState(0);
@@ -13,16 +20,16 @@ function App() {
   function handleInputChange(e: ChangeEvent<HTMLInputElement>) {
     const ID = e.target.id;
     switch (ID) {
-      case "initalInvestment":
+      case ChooseInput.initialInvestment:
         setInitialInvestment(+e.target.value);
         break;
-      case "annualInvestment":
+      case ChooseInput.annualInvestment:
         setAnnualInvestment(+e.target.value);
         break;
-      case "expectedReturn":
+      case ChooseInput.expectedReturn:
         setExpectedReturn(+e.target.value);
         break;
-      case "duration":
+      case ChooseInput.duration:
         setDuration(+e.target.value);
         break;
 
