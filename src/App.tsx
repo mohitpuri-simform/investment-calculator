@@ -6,8 +6,6 @@ import ReturnsPreview from "./components/returnsPreview/ReturnsPreview";
 import { ChooseInput } from "./typesOfInputs.constant";
 
 function App() {
-  console.log("here");
-
   const [initalInvestment, setInitialInvestment] = useState(0);
   const [annualInvestment, setAnnualInvestment] = useState(0);
   const [expectedReturn, setExpectedReturn] = useState(0);
