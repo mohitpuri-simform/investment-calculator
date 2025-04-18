@@ -3,15 +3,11 @@ import "./App.css";
 import Header from "./components/header/Header";
 import DetailInfo from "./components/investmentDetail/DetailInfo";
 import ReturnsPreview from "./components/returnsPreview/ReturnsPreview";
-
-enum ChooseInput {
-  initialInvestment = "initialInvestment",
-  annualInvestment = "annualInvestment",
-  expectedReturn = "expectedReturn",
-  duration = "duration",
-}
+import { ChooseInput } from "./typesOfInputs.constant";
 
 function App() {
+  console.log("here");
+
   const [initalInvestment, setInitialInvestment] = useState(0);
   const [annualInvestment, setAnnualInvestment] = useState(0);
   const [expectedReturn, setExpectedReturn] = useState(0);

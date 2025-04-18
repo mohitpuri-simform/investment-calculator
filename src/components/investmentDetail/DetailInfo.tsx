@@ -1,5 +1,6 @@
 import { ChangeEvent } from "react";
 import Input from "./Input";
+import { ChooseInput } from "../../typesOfInputs.constant";
 
 interface DetailInfoProps {
   onChangeInput: (e: ChangeEvent<HTMLInputElement>) => void;
@@ -9,23 +10,23 @@ function DetailInfo({ onChangeInput }: DetailInfoProps) {
   return (
     <div className="details-container">
       <Input
-        inputID="initialInvestment"
+        inputID={ChooseInput.initialInvestment}
         inputLabel="Initial Investment"
         onChangeInput={onChangeInput}
       />
 
       <Input
-        inputID="annualInvestment"
+        inputID={ChooseInput.annualInvestment}
         inputLabel="Annual Investment"
         onChangeInput={onChangeInput}
       />
       <Input
-        inputID="expectedReturn"
+        inputID={ChooseInput.expectedReturn}
         inputLabel="Expected Return"
         onChangeInput={onChangeInput}
       />
       <Input
-        inputID="duration"
+        inputID={ChooseInput.duration}
         inputLabel="Duration"
         onChangeInput={onChangeInput}
       />
